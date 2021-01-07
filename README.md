@@ -9,7 +9,7 @@ A valid credit card from ABCD Bank has the following characteristics:
 - It must only consist of digits (0-9).
 - It may have digits in groups of 4, separated by one hyphen "-".
 - It must NOT use any other separator like ' ' , '_', etc.
-- It must NOT have  or more consecutive repeated digits.
+- It must NOT have 4 or more consecutive repeated digits.
 
 Examples:
 
@@ -63,6 +63,8 @@ Invalid
 4123456789123456 : Valid\
 5123-4567-8912-3456 : Valid\
 61234--8912-3456 : Invalid, because the card number is not divided into equal groups of 4.\
-4123356789123456 : Valid
+4123356789123456 : Valid\
 51-67-8912-3456 : Invalid, consecutive digits 3333 is repeating 4 times.\
 5123456789123456 : Invalid, because space '  ' and - are used as separators.
+
+https://www.hackerrank.com/challenges/validating-credit-card-number/problem
